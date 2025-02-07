@@ -1,0 +1,24 @@
+.carousel-img {
+  width: 50%;
+}
+
+#skills {
+  position: relative;
+}
+
+.skill-box {
+  margin-top: 40px;
+  background-color: #121212;
+  border-radius: 64px;
+  text-align: center;
+  @media (max-width: 991px) {
+    margin-top: -64px;
+  }
+}
+
+.skill-para {
+  color: #b8b8b8;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+  margin-bottom: 20px;
+}

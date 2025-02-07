@@ -1,0 +1,78 @@
+.proj-card-img {
+  width: 100%;
+}
+
+.project-card-div {
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  height: 200px;
+}
+
+.project-card-div::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  opacity: 0.85;
+  top: 0;
+  transition: height 0.3s ease-in-out;
+}
+
+.project-card-div:hover::before {
+  height: 100%;
+}
+
+.project-card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-card-div:hover .project-card-details {
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+}
+
+.project-link {
+  color: white;
+  text-decoration: none;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-link:hover {
+  background-color: white;
+  color: black;
+}
+
+.open-project-btn {
+  text-decoration: none;
+  color: white;
+  border: 2px solid black;
+  padding: 5px 10px;
+  background-color: black;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.open-project-btn:hover {
+  color: black;
+  background-color: white;
+}
