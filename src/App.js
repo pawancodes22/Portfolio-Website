@@ -14,6 +14,8 @@ import Contact from "./components/Contact";
 
 import Footer from "./components/Footer";
 
+import Experience from "./components/Experience";
+
 function App() {
   return (
     <>
@@ -21,6 +23,7 @@ function App() {
       <Banner />
       <Skills />
       <Projects />
+      <Experience />
       <Contact />
       <Footer />
     </>

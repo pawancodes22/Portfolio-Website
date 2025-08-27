@@ -11,6 +11,9 @@ import "./index.css";
 const Banner = () => {
   const rotateArray = [
     "React",
+    "Node JS",
+    "Mongo DB",
+    "Sqlite",
     "HTML",
     "CSS",
     "Javascript",
@@ -74,18 +77,14 @@ const Banner = () => {
           <Col xs={12} lg={8} xl={7}>
             <span className="banner-welcome">Welcome to Portfolio</span>
             <h1 className="intro-h1">
-              Hello! I'm Pawan, a skilled React developer.
+              Hello! I'm Pawan, a skilled MERN stack developer.
             </h1>
             <h2>My skills include {currentWord}</h2>
             <p className="header-para">
-              I have a solid foundation in HTML, CSS, and JavaScript, with a
-              strong proficiency in React.js. Additionally, I possess knowledge
-              of other parts of the MERN stack, including Node.js, Express.js,
-              and SQLite. I have hands-on experience in building various
-              projects involving API integration, routing, and implementing
-              authentication and authorization using JWT (JSON Web Token). I am
-              also well-versed in using Git and GitHub for version control and
-              collaboration.
+              Full-Stack Developer skilled in React.js, Node.js, Express.js, and
+              MongoDB, building dynamic web applications, and real-time features
+              with clean, maintainable code. Skilled in building RESTful APIs,
+              managing databases .
             </p>
             <a href="#contact-us" className="lets-connect-btn">
               Let's Connect

@@ -6,13 +6,35 @@ import jobbyImg from "../../assets/img/jobbyImg.png";
 import nxtTrendz from "../../assets/img/nxtTrendz.jpg";
 import nxtWatch from "../../assets/img/nxtWatch.png";
 import foodMunch from "../../assets/img/foodMunch.png";
+import chatApplication from "../../assets/img/chatApplication.png";
+import busBooking from "../../assets/img/busBooking.png";
 
 import ProjectCard from "../ProjectCard";
 
 import "./index.css";
 
 const Projects = () => {
-  const projects = [
+  const projectsTab1 = [
+    {
+      title: "Chat Application",
+      projectLink: "https://chatapplication-jzqv.onrender.com/",
+      imgUrl: chatApplication,
+      description:
+        "A full-stack real-time chat application with instant messaging, notifications, and user authentication.",
+      skills:
+        "ReactJS, React Router, NodeJS, MongoDB, Socket.IO RESTful APIs, ",
+      otherDetails:
+        "Launch the application in two different browser tabs or on separate devices, create two distinct user accounts, send messages between them, and confirm that messages are delivered instantly in real-time without needing to refresh.",
+    },
+    {
+      title: "Bus Booking",
+      projectLink: "https://busticketing-om3n.onrender.com",
+      imgUrl: busBooking,
+      description:
+        "A full-stack ticket booking platform with RESTful APIs, secure JWT authentication, and responsive frontend for managing bus routes and bookings.",
+      skills: "ReactJS, React Router, NodeJS, Sqlite, RESTful APIs, ",
+      loginDetails: ". (Login: pawan93/pawan@31)",
+    },
     {
       title: "Jobby App",
       projectLink: "https://pawancjobby.ccbp.tech/",
@@ -22,6 +44,8 @@ const Projects = () => {
       skills: "React.js, React Router, RESTful APIs, Cookies, Jsonwebtoken",
       loginDetails: 'Project username is "rahul" and password is "rahul@2021".',
     },
+  ];
+  const projectsTab2 = [
     {
       title: "Nxttrendz",
       projectLink: "https://pawanxtrendz.ccbp.tech/",
@@ -43,26 +67,26 @@ const Projects = () => {
       loginDetails: 'Project username is "rahul" and password is "rahul@2021".',
     },
   ];
-  const projectsTab2 = [
-    {
-      title: "Restaurant App",
-      projectLink: "https://pawancodes.ccbp.tech/",
-      imgUrl: foodMunch,
-    },
-  ];
+  // const projectsTab2 = [
+  //   {
+  //     title: "Restaurant App",
+  //     projectLink: "https://pawancodes.ccbp.tech/",
+  //     imgUrl: foodMunch,
+  //   },
+  // ];
   return (
     <section className="projects" id="projects">
       <Container>
         <Row>
           <Col size={12}>
             <h1 className="text-center">Projects</h1>
-            <p className="proj-para mb-5">
-              I have successfully developed and deployed several projects
-              utilizing my proficiency in HTML, CSS, JavaScript, and
-              React.js.These projects highlight my expertise in building dynamic
-              and responsive user interfaces, API integration, routing, and
-              implementing secure authentication and authorization using JWT
-              (JSON Web Token).
+            <p style={{ textAlign: "justify" }} className="proj-para mb-5">
+              Built full-stack web applications using React.js, Node.js,
+              Express.js, and databases like MongoDB/SQLite, featuring real-time
+              messaging, secure authentication, and RESTful APIs. Projects span
+              chat apps, bus ticket booking platforms, e-commerce, and
+              multimedia platforms, demonstrating end-to-end development
+              expertise.
             </p>
             <Tab.Container id="left-tabs-example" defaultActiveKey="first">
               <Nav variant="pills" className="flex-row justify-content-center">
@@ -79,15 +103,17 @@ const Projects = () => {
               <Tab.Content>
                 <Tab.Pane eventKey="first">
                   <Row>
-                    {projects.map((project, index) => (
+                    {projectsTab1.map((project, index) => (
                       <ProjectCard key={index} project={project} />
                     ))}
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
-                  <div className="py-5">
-                    <p className="text-center">Place to add more projects</p>
-                  </div>
+                  <Row>
+                    {projectsTab2.map((project, index) => (
+                      <ProjectCard key={index} project={project} />
+                    ))}
+                  </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="third">
                   <div className="py-5">

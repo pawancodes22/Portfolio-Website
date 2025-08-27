@@ -5,8 +5,15 @@ import { useState } from "react";
 import "./index.css";
 const ProjectCard = (props) => {
   const { project } = props;
-  const { title, description, imgUrl, projectLink, skills, loginDetails } =
-    project;
+  const {
+    title,
+    description,
+    imgUrl,
+    projectLink,
+    skills,
+    loginDetails,
+    otherDetails,
+  } = project;
   const [modalShow, setModalShow] = useState(false);
   return (
     <Col md={4}>
@@ -32,10 +39,19 @@ const ProjectCard = (props) => {
                 <span className="fw-bold">Skills Used: </span>
                 {skills}
               </p>
-              <p>
-                <span className="fw-bold">Login Details: </span>
-                {loginDetails}
-              </p>
+              {loginDetails ? (
+                <p>
+                  <span className="fw-bold">Login Details: </span>
+                  {loginDetails}
+                </p>
+              ) : (
+                otherDetails && (
+                  <p>
+                    <span className="fw-bold">Other Details: </span>
+                    {otherDetails}
+                  </p>
+                )
+              )}
             </Modal.Body>
             <Modal.Footer>
               <a

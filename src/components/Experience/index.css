@@ -1,0 +1,70 @@
+.projects {
+  margin-top: 50px;
+  padding-top: 20px;
+}
+
+.proj-para {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+  @media (max-width: 1024px) {
+    width: 80%;
+  }
+}
+
+.project-nav-item {
+  width: 20%;
+  text-align: center;
+  border-style: solid;
+  margin: 0px;
+  border-color: rgba(255, 255, 255, 1);
+  border-width: 1px;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects .nav-pills {
+  margin-bottom: 40px;
+}
+
+.project-nav-item a {
+  margin: 0px;
+  color: white !important;
+  opacity: 1;
+}
+
+.project-nav-item .nav-link.active {
+  background-color: transparent;
+}
+
+.project-nav-item .nav-link:hover,
+.project-nav-item .nav-link:focus {
+  transform: scale(1);
+}
+
+.project-nav-item .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: width 0.3s ease-in-out;
+}
+
+.project-nav-item .nav-link.active::before {
+  width: 100%;
+}
+
+.nav-item-1 {
+  border-radius: 20px 0px 0px 20px;
+}
+
+.nav-item-3 {
+  border-radius: 0px 20px 20px 0px;
+}

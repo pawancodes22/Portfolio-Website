@@ -3,6 +3,7 @@ import logo from "../../assets/img/logo.svg";
 import navIcon1 from "../../assets/img/nav-icon1.svg";
 import navIcon2 from "../../assets/img/nav-icon2.svg";
 import navIcon3 from "../../assets/img/nav-icon3.svg";
+import navIcon5 from "../../assets/img/nav-icon5.svg";
 
 import "./index.css";
 
@@ -29,11 +30,15 @@ const Footer = () => {
               >
                 <img src={navIcon1} alt="linkedin" />
               </a>
-              <a href="#">
-                <img src={navIcon2} alt="facebook" />
-              </a>
-              <a href="#">
-                <img src={navIcon3} alt="instagram" />
+              <a
+                target="_blank"
+                href="https://github.com/pawancodes22/project-portfolio.git"
+              >
+                <img
+                  style={{ filter: "invert(100%)" }}
+                  src={navIcon5}
+                  alt="github"
+                />
               </a>
             </div>
           </Col>

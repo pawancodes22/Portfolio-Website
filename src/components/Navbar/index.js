@@ -5,6 +5,8 @@ import Logo from "../../assets/img/logo.svg";
 import navIcon1 from "../../assets/img/nav-icon1.svg";
 import navIcon2 from "../../assets/img/nav-icon2.svg";
 import navIcon3 from "../../assets/img/nav-icon3.svg";
+import navIcon4 from "../../assets/img/nav-icon4..svg";
+import navIcon5 from "../../assets/img/nav-icon5.svg";
 
 import { Nav, Container, Navbar } from "react-bootstrap";
 
@@ -64,6 +66,13 @@ const NavBar = () => {
             >
               Projects
             </Nav.Link>
+            <Nav.Link
+              href="#experience"
+              className={activeTab === "experience" ? "active-nav-link" : ""}
+              onClick={(e) => changeActiveTab(e)}
+            >
+              Experience
+            </Nav.Link>
           </Nav>
           <div className="social-icons">
             <a
@@ -72,12 +81,19 @@ const NavBar = () => {
             >
               <img src={navIcon1} alt="linkedin" />
             </a>
-            <a href="#">
-              <img src={navIcon2} alt="facebook" />
+            <a
+              target="_blank"
+              href="https://github.com/pawancodes22/project-portfolio.git"
+            >
+              <img
+                style={{ filter: "invert(100%)" }}
+                src={navIcon5}
+                alt="github"
+              />
             </a>
-            <a href="#">
+            {/* <a href="#">
               <img src={navIcon3} alt="instagram" />
-            </a>
+            </a> */}
           </div>
           <a href="#contact-us" className="contact-us-btn">
             Let's Connect!
